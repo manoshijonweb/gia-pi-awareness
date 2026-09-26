@@ -4,6 +4,47 @@ Raspberry Pi 5 Model B Rev 1.0, Pi OS with Python 3.13.5, `aarch64`.
 
 Hostname `pi` (**not** `raspberrypi` — `raspberrypi.local` will not resolve).
 
+## How to set it up
+
+The finished device is the app in [`PI_AWARENESS/`](PI_AWARENESS/). It is an offline
+assistive device for blind users that announces objects, colours, text and distance by
+voice, in English and Hindi.
+
+You need a Raspberry Pi 5 running Raspberry Pi OS 64-bit, the wired hardware listed
+below, and an internet connection for the first install only.
+
+```bash
+git clone https://github.com/manoshijonweb/gia-pi-awareness.git
+cd gia-pi-awareness/PI_AWARENESS
+bash install.sh
+sudo reboot
+```
+
+After the reboot the device says **"I am ready"** and listens for commands.
+
+**The AI models are not in this repository.** They are too large for GitHub.
+`install.sh` downloads them once from their public sources. The YOLO26 and OCR files
+are checked against pinned SHA-256 hashes. The Vosk models have no published hash, so
+the installer records their hashes locally and checks against those afterwards.
+
+| Model | Used for | Downloaded from |
+|---|---|---|
+| YOLO26 (ONNX) | Object detection | Hugging Face (`onnx-community`) |
+| PP-OCRv5 (RapidOCR) | Reading text | ModelScope (`RapidAI`) |
+| Vosk small en-in, small hi | English and Hindi voice commands | alphacephei.com |
+
+To fetch or check them again later:
+
+```bash
+.venv/bin/python tools/download_models.py           # download anything missing
+.venv/bin/python tools/download_models.py --verify  # check files, no internet
+```
+
+Once installed, the device never needs the internet. Full instructions, voice
+commands and troubleshooting are in [`PI_AWARENESS/README.md`](PI_AWARENESS/README.md).
+
+The rest of this page is the original hardware bring-up log.
+
 ## Hardware
 
 | Part | Bus | Status |
