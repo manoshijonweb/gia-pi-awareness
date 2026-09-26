@@ -1,0 +1,175 @@
+test_calibration_cancel (test_app.ApplicationTests.test_calibration_cancel) ... ok
+test_calibration_requires_start (test_app.ApplicationTests.test_calibration_requires_start) ... ok
+test_camera_failure_spoken_not_faked (test_app.ApplicationTests.test_camera_failure_spoken_not_faked) ... Feature color unavailable: camera failed
+Traceback (most recent call last):
+  File "/mnt/data/PI_AWARENESS_Pi5_Hardware_v1.2.0/PI_AWARENESS/awareness/app.py", line 169, in process
+    result = identify_color(self._frame(), self.cfg.vision)
+                            ~~~~~~~~~~~^^
+  File "/mnt/data/PI_AWARENESS_Pi5_Hardware_v1.2.0/PI_AWARENESS/awareness/app.py", line 92, in _frame
+    raise FeatureError(self.camera_error)
+awareness.common.FeatureError: camera failed
+ok
+test_color_end_to_end_actual_opencv (test_app.ApplicationTests.test_color_end_to_end_actual_opencv) ... ok
+test_hindi_auto_locale (test_app.ApplicationTests.test_hindi_auto_locale) ... ok
+test_language_switch (test_app.ApplicationTests.test_language_switch) ... ok
+test_live_camera_is_on_demand (test_app.ApplicationTests.test_live_camera_is_on_demand) ... ok
+test_missing_model_spoken_not_faked (test_app.ApplicationTests.test_missing_model_spoken_not_faked) ... Feature scan unavailable: missing weights
+Traceback (most recent call last):
+  File "/mnt/data/PI_AWARENESS_Pi5_Hardware_v1.2.0/PI_AWARENESS/awareness/app.py", line 174, in process
+    raise FeatureError(self.feature_errors[intent])
+awareness.common.FeatureError: missing weights
+ok
+test_ocr_cancel_drops_late_result (test_app.ApplicationTests.test_ocr_cancel_drops_late_result) ... ok
+test_repeat (test_app.ApplicationTests.test_repeat) ... ok
+test_sensor_unavailable_no_clear (test_app.ApplicationTests.test_sensor_unavailable_no_clear) ... ok
+test_stop_drains_queued_commands (test_app.ApplicationTests.test_stop_drains_queued_commands) ... ok
+test_stub_ocr_response (test_app.ApplicationTests.test_stub_ocr_response) ... ok
+test_stub_scan_response (test_app.ApplicationTests.test_stub_scan_response) ... ok
+test_voice_calibration_requires_confirm (test_app.ApplicationTests.test_voice_calibration_requires_confirm) ... ok
+test_voice_start_announces_exact_ready_then_starts_listener (test_app.ApplicationTests.test_voice_start_announces_exact_ready_then_starts_listener) ... ok
+test_all_aliases (test_commands_distance.Commands.test_all_aliases) ... ok
+test_ambiguous_bilingual_rejected (test_commands_distance.Commands.test_ambiguous_bilingual_rejected) ... ok
+test_calibration_english (test_commands_distance.Commands.test_calibration_english) ... ok
+test_calibration_hindi (test_commands_distance.Commands.test_calibration_hindi) ... ok
+test_clear_bilingual_winner (test_commands_distance.Commands.test_clear_bilingual_winner) ... ok
+test_grammar_unk_and_no_digits (test_commands_distance.Commands.test_grammar_unk_and_no_digits) ... ok
+test_hindi_marks_preserved (test_commands_distance.Commands.test_hindi_marks_preserved) ... ok
+test_low_confidence_rejected (test_commands_distance.Commands.test_low_confidence_rejected) ... ok
+test_matching_bilingual_intents (test_commands_distance.Commands.test_matching_bilingual_intents) ... ok
+test_no_substring_trigger (test_commands_distance.Commands.test_no_substring_trigger) ... ok
+test_punctuation (test_commands_distance.Commands.test_punctuation) ... ok
+test_wake_prefix (test_commands_distance.Commands.test_wake_prefix) ... ok
+test_close_warning (test_commands_distance.StepDistance.test_close_warning) ... ok
+test_conservative_half_steps (test_commands_distance.StepDistance.test_conservative_half_steps) ... ok
+test_corrupt_file_falls_back (test_commands_distance.StepDistance.test_corrupt_file_falls_back) ... Invalid calibration; using default: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+ok
+test_default_and_roundtrip (test_commands_distance.StepDistance.test_default_and_roundtrip) ... ok
+test_disabled_sensor (test_commands_distance.StepDistance.test_disabled_sensor) ... ok
+test_invalid_never_clear (test_commands_distance.StepDistance.test_invalid_never_clear) ... ok
+test_invalid_values (test_commands_distance.StepDistance.test_invalid_values) ... ok
+test_maximum_cannot_claim_six_steps (test_commands_distance.StepDistance.test_maximum_cannot_claim_six_steps) ... ok
+test_measured_walk (test_commands_distance.StepDistance.test_measured_walk) ... ok
+test_on_demand_sensor_does_not_reuse_old_cache (test_commands_distance.StepDistance.test_on_demand_sensor_does_not_reuse_old_cache) ... ok
+test_three_steps (test_commands_distance.StepDistance.test_three_steps) ... ok
+test_walk_bad_counts (test_commands_distance.StepDistance.test_walk_bad_counts) ... ok
+test_callback_muted_during_playback (test_hardware_security.AudioTests.test_callback_muted_during_playback) ... ok
+test_chunks_preserve_words (test_hardware_security.AudioTests.test_chunks_preserve_words) ... ok
+test_i2s_choose_input_is_16k_after_conversion (test_hardware_security.AudioTests.test_i2s_choose_input_is_16k_after_conversion) ... ok
+test_i2s_output_auto_resolution (test_hardware_security.AudioTests.test_i2s_output_auto_resolution) ... ok
+test_inmp441_s32_stereo_to_16k_mono (test_hardware_security.AudioTests.test_inmp441_s32_stereo_to_16k_mono) ... ok
+test_missing_hindi_fails (test_hardware_security.AudioTests.test_missing_hindi_fails) ... ok
+test_multilingual_runs (test_hardware_security.AudioTests.test_multilingual_runs) ... ok
+test_native_rate_fallback (test_hardware_security.AudioTests.test_native_rate_fallback) ... ok
+test_oov_grammar_filtered (test_hardware_security.AudioTests.test_oov_grammar_filtered) ... ok
+test_stereo_channel_selection (test_hardware_security.AudioTests.test_stereo_channel_selection) ... ok
+test_tts_english_fallback (test_hardware_security.AudioTests.test_tts_english_fallback) ... TTS voice en-in absent; using en
+ok
+test_capture_once_closes_camera (test_hardware_security.CameraTests.test_capture_once_closes_camera) ... ok
+test_fresh_copy (test_hardware_security.CameraTests.test_fresh_copy) ... ok
+test_missing_image_never_falls_back (test_hardware_security.CameraTests.test_missing_image_never_falls_back) ... [ WARN:0@0.070] global loadsave.cpp:278 findDecoder imread_('/nonexistent/noimage.png'): can't open/read file: check file path/integrity
+ok
+test_stale_rejected (test_hardware_security.CameraTests.test_stale_rejected) ... ok
+test_install_configures_exact_pi_hardware_overlay (test_hardware_security.DeploymentProfileTests.test_install_configures_exact_pi_hardware_overlay) ... ok
+test_service_is_enabled_and_network_isolated (test_hardware_security.DeploymentProfileTests.test_service_is_enabled_and_network_isolated) ... ok
+test_archive_size_cap (test_hardware_security.DownloadSecurity.test_archive_size_cap) ... ok
+test_local_checksum_verification (test_hardware_security.DownloadSecurity.test_local_checksum_verification) ... ok
+test_manifest_pins_and_versions (test_hardware_security.DownloadSecurity.test_manifest_pins_and_versions) ... ok
+test_offline_guard_blocks_internet (test_hardware_security.DownloadSecurity.test_offline_guard_blocks_internet) ... ok
+test_safe_archive (test_hardware_security.DownloadSecurity.test_safe_archive) ... ok
+test_symlink_rejected (test_hardware_security.DownloadSecurity.test_symlink_rejected) ... ok
+test_traversal_and_root_rejected (test_hardware_security.DownloadSecurity.test_traversal_and_root_rejected) ... ok
+test_no_return_invalid (test_hardware_security.ToFTests.test_no_return_invalid) ... ok
+test_on_demand_sensor_uses_nearest_requested_sample (test_hardware_security.ToFTests.test_on_demand_sensor_uses_nearest_requested_sample) ... ok
+test_out_of_range_invalid (test_hardware_security.ToFTests.test_out_of_range_invalid) ... ok
+test_sensor_failure_is_fail_closed (test_hardware_security.ToFTests.test_sensor_failure_is_fail_closed) ... Distance sensor unavailable: i2c fail
+ok
+test_valid_mm_preserved (test_hardware_security.ToFTests.test_valid_mm_preserved) ... ok
+test_ambiguous_color (test_vision.ColorTests.test_ambiguous_color) ... ok
+test_bad_image (test_vision.ColorTests.test_bad_image) ... ok
+test_central_region (test_vision.ColorTests.test_central_region) ... ok
+test_color_constancy_not_graying_red (test_vision.ColorTests.test_color_constancy_not_graying_red) ... ok
+test_darkness_not_false_black (test_vision.ColorTests.test_darkness_not_false_black) ... ok
+test_hindi_dark_blue (test_vision.ColorTests.test_hindi_dark_blue) ... ok
+test_red_wrap (test_vision.ColorTests.test_red_wrap) ... ok
+test_solid_colors (test_vision.ColorTests.test_solid_colors) ... ok
+test_crop_and_normalization (test_vision.OCRTests.test_crop_and_normalization) ... ok
+test_ctc_dict_mismatch (test_vision.OCRTests.test_ctc_dict_mismatch) ... ok
+test_ctc_empty (test_vision.OCRTests.test_ctc_empty) ... ok
+test_ctc_nan (test_vision.OCRTests.test_ctc_nan) ... ok
+test_ctc_repeat_blank_unicode (test_vision.OCRTests.test_ctc_repeat_blank_unicode) ... ok
+test_db_boxes (test_vision.OCRTests.test_db_boxes) ... ok
+test_db_low_probability (test_vision.OCRTests.test_db_low_probability) ... ok
+test_db_nan (test_vision.OCRTests.test_db_nan) ... ok
+test_incomplete_description (test_vision.OCRTests.test_incomplete_description) ... ok
+test_order_no_duplicate_corners (test_vision.OCRTests.test_order_no_duplicate_corners) ... ok
+test_order_regular_quad (test_vision.OCRTests.test_order_regular_quad) ... ok
+test_read_cancel (test_vision.OCRTests.test_read_cancel) ... ok
+test_read_cooperative_budget (test_vision.OCRTests.test_read_cooperative_budget) ... ok
+test_reading_order (test_vision.OCRTests.test_reading_order) ... ok
+test_vertical_crop_rotates (test_vision.OCRTests.test_vertical_crop_rotates) ... ok
+test_class_aware_nms (test_vision.ObjectTests.test_class_aware_nms) ... ok
+test_description_counts (test_vision.ObjectTests.test_description_counts) ... ok
+test_description_not_clear (test_vision.ObjectTests.test_description_not_clear) ... ok
+test_description_person_plural (test_vision.ObjectTests.test_description_person_plural) ... ok
+test_eighty_classes (test_vision.ObjectTests.test_eighty_classes) ... ok
+test_empty_nms (test_vision.ObjectTests.test_empty_nms) ... ok
+test_letterbox_distinct (test_vision.ObjectTests.test_letterbox_distinct) ... ok
+test_v8_detect_mock_onnx_preprocess (test_vision.ObjectTests.test_v8_detect_mock_onnx_preprocess) ... ok
+test_v8_layouts (test_vision.ObjectTests.test_v8_layouts) ... ok
+test_v8_wrong_export_rejected (test_vision.ObjectTests.test_v8_wrong_export_rejected) ... ok
+test_yolox_detect_mock_onnx_preprocess (test_vision.ObjectTests.test_yolox_detect_mock_onnx_preprocess) ... ok
+test_yolox_grid_and_objectness (test_vision.ObjectTests.test_yolox_grid_and_objectness) ... ok
+test_yolox_grid_mismatch (test_vision.ObjectTests.test_yolox_grid_mismatch) ... ok
+test_export_shape_validation (test_yolo26.ExportUpgradeTests.test_export_shape_validation) ... ok
+test_export_static_input_validation (test_yolo26.ExportUpgradeTests.test_export_static_input_validation) ... ok
+test_upgrade_idempotent (test_yolo26.ExportUpgradeTests.test_upgrade_idempotent) ... ok
+test_upgrade_preserves_unrelated_fields (test_yolo26.ExportUpgradeTests.test_upgrade_preserves_unrelated_fields) ... ok
+test_upgrade_unknown_schema_refused (test_yolo26.ExportUpgradeTests.test_upgrade_unknown_schema_refused) ... ok
+test_bad_image_rejected (test_yolo26.YOLO26AdapterTests.test_bad_image_rejected) ... ok
+test_community_clips_boxes_to_source (test_yolo26.YOLO26AdapterTests.test_community_clips_boxes_to_source) ... ok
+test_community_coordinates_and_hindi (test_yolo26.YOLO26AdapterTests.test_community_coordinates_and_hindi) ... ok
+test_community_does_not_run_external_nms (test_yolo26.YOLO26AdapterTests.test_community_does_not_run_external_nms) ... ok
+test_community_empty_result (test_yolo26.YOLO26AdapterTests.test_community_empty_result) ... ok
+test_community_graph_as_native_fails (test_yolo26.YOLO26AdapterTests.test_community_graph_as_native_fails) ... ok
+test_community_preprocess_rgb_unit_range_and_no_padding (test_yolo26.YOLO26AdapterTests.test_community_preprocess_rgb_unit_range_and_no_padding) ... ok
+test_dedicated_threads (test_yolo26.YOLO26AdapterTests.test_dedicated_threads) ... ok
+test_default_is_m640 (test_yolo26.YOLO26AdapterTests.test_default_is_m640) ... ok
+test_e2e_native_centered_letterbox_and_remap (test_yolo26.YOLO26AdapterTests.test_e2e_native_centered_letterbox_and_remap) ... ok
+test_graph_batch_mismatch_fails (test_yolo26.YOLO26AdapterTests.test_graph_batch_mismatch_fails) ... ok
+test_graph_channel_mismatch_fails (test_yolo26.YOLO26AdapterTests.test_graph_channel_mismatch_fails) ... ok
+test_graph_size_mismatch_fails (test_yolo26.YOLO26AdapterTests.test_graph_size_mismatch_fails) ... ok
+test_invalid_geometry_discarded (test_yolo26.YOLO26AdapterTests.test_invalid_geometry_discarded) ... ok
+test_letterbox_rounding_matches_native_export (test_yolo26.YOLO26AdapterTests.test_letterbox_rounding_matches_native_export) ... ok
+test_named_community_outputs (test_yolo26.YOLO26AdapterTests.test_named_community_outputs) ... ok
+test_native_graph_as_community_fails (test_yolo26.YOLO26AdapterTests.test_native_graph_as_community_fails) ... ok
+test_native_raw_runs_nms (test_yolo26.YOLO26AdapterTests.test_native_raw_runs_nms) ... ok
+test_timings_reported (test_yolo26.YOLO26AdapterTests.test_timings_reported) ... ok
+test_unknown_detector_or_format_rejected (test_yolo26.YOLO26AdapterTests.test_unknown_detector_or_format_rejected) ... ok
+test_community_empty_candidates (test_yolo26.YOLO26DecodeTests.test_community_empty_candidates) ... ok
+test_community_infinite_box_rejected (test_yolo26.YOLO26DecodeTests.test_community_infinite_box_rejected) ... ok
+test_community_infinite_logits_are_sigmoid_limits (test_yolo26.YOLO26DecodeTests.test_community_infinite_logits_are_sigmoid_limits) ... ok
+test_community_multi_label_scores_do_not_softmax (test_yolo26.YOLO26DecodeTests.test_community_multi_label_scores_do_not_softmax) ... ok
+test_community_nan_logit_rejects_row (test_yolo26.YOLO26DecodeTests.test_community_nan_logit_rejects_row) ... ok
+test_community_shapes_rejected (test_yolo26.YOLO26DecodeTests.test_community_shapes_rejected) ... ok
+test_community_sigmoid_not_softmax (test_yolo26.YOLO26DecodeTests.test_community_sigmoid_not_softmax) ... ok
+test_e2e_empty (test_yolo26.YOLO26DecodeTests.test_e2e_empty) ... ok
+test_e2e_invalid_classes_filtered_before_cast (test_yolo26.YOLO26DecodeTests.test_e2e_invalid_classes_filtered_before_cast) ... ok
+test_e2e_invalid_scores (test_yolo26.YOLO26DecodeTests.test_e2e_invalid_scores) ... ok
+test_e2e_no_input_mutation (test_yolo26.YOLO26DecodeTests.test_e2e_no_input_mutation) ... ok
+test_e2e_wrong_contract_rejected (test_yolo26.YOLO26DecodeTests.test_e2e_wrong_contract_rejected) ... ok
+test_e2e_xyxy_not_xywh (test_yolo26.YOLO26DecodeTests.test_e2e_xyxy_not_xywh) ... ok
+test_all_three_yolo_assets_pinned (test_yolo26.YOLO26ProvisionTests.test_all_three_yolo_assets_pinned) ... ok
+test_bad_profile_rejected (test_yolo26.YOLO26ProvisionTests.test_bad_profile_rejected) ... ok
+test_benchmark_summary (test_yolo26.YOLO26ProvisionTests.test_benchmark_summary) ... ok
+test_conflicting_selection_rejected (test_yolo26.YOLO26ProvisionTests.test_conflicting_selection_rejected) ... ok
+test_default_contains_m_not_legacy (test_yolo26.YOLO26ProvisionTests.test_default_contains_m_not_legacy) ... ok
+test_missing_verify_never_uses_network (test_yolo26.YOLO26ProvisionTests.test_missing_verify_never_uses_network) ... ok
+test_only_detector_and_shared_selection (test_yolo26.YOLO26ProvisionTests.test_only_detector_and_shared_selection) ... ok
+test_profile_keeps_other_settings (test_yolo26.YOLO26ProvisionTests.test_profile_keeps_other_settings) ... ok
+test_profile_never_changes_thread_policy (test_yolo26.YOLO26ProvisionTests.test_profile_never_changes_thread_policy) ... ok
+test_unknown_download_not_silent_fallback (test_yolo26.YOLO26ProvisionTests.test_unknown_download_not_silent_fallback) ... ok
+
+----------------------------------------------------------------------
+Ran 153 tests in 0.834s
+
+OK

@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+*.wav
+vosk-model-*/
+*.zip
+~$*
+Thumbs.db

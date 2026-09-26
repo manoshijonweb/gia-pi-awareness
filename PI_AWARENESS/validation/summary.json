@@ -1,0 +1,28 @@
+{
+  "release": "1.2.0",
+  "build_date": "2026-09-22",
+  "environment": {
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "machine": "x86_64",
+    "python": "3.13.5"
+  },
+  "software_tests": {
+    "command": "python3 server.py --self-test",
+    "passed": 153,
+    "failures": 0,
+    "errors": 0
+  },
+  "syntax_checks": {
+    "python_compileall": "passed",
+    "bash_n": "passed"
+  },
+  "physical_pi_hardware_tested": false,
+  "model_weights_bundled": false,
+  "hardware_profile": [
+    "Raspberry Pi 5",
+    "Raspberry Pi Camera Rev 1.3",
+    "INMP441",
+    "MAX98357A",
+    "VL53L0X"
+  ]
+}

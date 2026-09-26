@@ -1,0 +1,7 @@
+# Raspberry Pi OS supplies numpy, cv2, libcamera and Picamera2 through apt.
+# Use install.sh; do not pip-install opencv-python or Picamera2 over the apt stack.
+onnxruntime==1.30.0
+vosk==0.3.45
+sounddevice==0.5.2
+smbus2==0.5.0
+adafruit-circuitpython-vl53l0x==3.6.19

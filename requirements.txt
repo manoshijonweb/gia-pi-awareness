@@ -1,0 +1,12 @@
+# Install on the Pi with:
+#   pip install -r requirements.txt --break-system-packages
+
+smbus2              # raw I2C bus scanning, used by hwcheck.py
+adafruit-circuitpython-vl53l0x   # pulls in Adafruit-Blinka for the Pi 5
+numpy               # signal handling in inmp441.py and transcribe.py
+vosk                # offline speech to text
+
+# Not a pip package -- fetch separately:
+#   wget https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip
+#   unzip vosk-model-small-en-us-0.15.zip
+# Expected at ~/vosk-model-small-en-us-0.15
